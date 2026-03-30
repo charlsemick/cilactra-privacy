@@ -1,18 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Delete Account - Cilactra</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account | Cilactra NG</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #ef4444;
+            --primary-dark: #dc2626;
+            --secondary: #64748b;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --text-light: #475569;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: -2rem auto 4rem;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background: white;
+            padding: 3rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .warning {
+            background: #fee2e2;
+            border: 1px solid #fecaca;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .steps {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 640px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Delete Your Account</h1>
-  <p>If you would like to delete your account and all associated data, please follow the instructions below:</p>
 
-  <h3>Option 1:</h3>
-  <p>Email us at: <b>charlsemick@gmail.com</b> with the subject "Delete My Account"</p>
+<header>
+    <h1>Cilactra NG</h1>
+    <p>Delete Your Account & Data</p>
+</header>
 
-  <h3>Option 2:</h3>
-  <p>Use the in-app settings to request account deletion.</p>
+<main>
+    <div class="card">
 
-  <p>We will process your request within 72 hours.</p>
+        <section>
+            <h2>Request Account Deletion</h2>
+            <p>You have the right to request deletion of your account and all associated personal data from Cilactra NG.</p>
+
+            <div class="warning">
+                <strong>Important:</strong> Deleting your account is permanent and cannot be undone.
+            </div>
+        </section>
+
+        <section>
+            <h2>How to Delete Your Account</h2>
+
+            <div class="steps">
+                <p><strong>Option 1 (Recommended):</strong></p>
+                <ul>
+                    <li>Open the Cilactra NG app</li>
+                    <li>Go to <strong>Settings</strong></li>
+                    <li>Select <strong>Delete Account</strong></li>
+                </ul>
+
+                <p><strong>Option 2 (Manual Request):</strong></p>
+                <ul>
+                    <li>Email us at: <strong>support@empirewebservice.com</strong></li>
+                    <li>Use the subject: <strong>"Delete My Account"</strong></li>
+                    <li>Include your registered email or phone number</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>What Data Will Be Deleted</h2>
+            <ul>
+                <li>Your account profile and personal details</li>
+                <li>Transaction and purchase history</li>
+                <li>Saved preferences and settings</li>
+                <li>Uploaded content (photos, profile data)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Data Retention</h2>
+            <p>Some data may be retained for a limited period where required for:</p>
+            <ul>
+                <li>Legal and regulatory compliance</li>
+                <li>Fraud prevention and security</li>
+                <li>Financial record-keeping obligations</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Processing Time</h2>
+            <p>All deletion requests are processed within <strong>7 days</strong> from the date of request.</p>
+        </section>
+
+        <section>
+            <h2>Need Help?</h2>
+            <p>If you have any questions, contact us:</p>
+            <p><strong>Email:</strong> support@empirewebservice.com</p>
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Cilactra NG. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
